@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* Name(s): Maddi Moeller, Sean Brace */
+
+/*CSS for the background and font type of document */
+body {
+   background-color: rgb(255,255,217);
+   font-family: arial;
+}
+
+/*'BlackJack' heading*/
+h1{
+   text-align: center;
+   color: red;
+   font-size: 35px;
+}
+
+/*For the important legends' font size*/
+.important-legend {
+	font-size: 15px;
+}
+
+/*Dealer's card area's colour and card flex*/
+.dealer-area {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   border-width: 3px;
+   border-color: blue;
+   background-color: rgb(109, 175, 78);
+}
+
+/*More card flex and colours*/
+.dealer-area div {
+   color: black;
+   background-color: rgba(175, 175, 175, 0.5);
+   border-style: solid;
+   border-width: 2px;
+   border-color: blue;
+   padding-left: 25px;
+   padding-right: 25px;
+   padding-top: 20px;
+   padding-bottom: 25px;
+   margin: 5px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+/*Betting info div border*/
+.player-info {
+   border-width: 3px;
+   border-color: rgb(255, 255, 0);
+}
+
+/*making the font centred and bold for the message output in .player-info*/
+.message-output{
+   text-align: center;
+   font-weight: bold; 
+}
+
+/*Player card area*/
+.player-area {
+   border-width: 3px;
+   border-color: red;
+   background-color: rgb(109, 175, 78);
+}
+
+/*More flex*/
+.player-area div {
+   color: black;
+   background-color: rgba(175, 175, 175, 0.5);
+   border-style: solid;
+   border-width: 2px;
+   border-color: red;
+   padding-left: 25px;
+   padding-right: 25px;
+   padding-top: 20px;
+   padding-bottom: 25px;
+   margin: 5px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+/*Both below are for all of the buttons' fieldsets*/
+.first-row {
+   border-style: hidden;
+   border-width: 3px;
+}
+
+.second-row {
+   border-style: hidden;
+   border-width: 3px;
+}
+
+.important-legend {
+   padding-top: 5px;
+   display: flex;
+   
+}

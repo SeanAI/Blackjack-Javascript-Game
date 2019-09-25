@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!-- Name(s): Maddi Moeller, Sean Brace -->
+
+<html lang="en-US"><head>
+
+<meta charset="UTF-8" />
+<title>Final Project: BlackJack</title>
+
+<!-- Import a CSS stylesheet for presentation. -->
+<link href="style.css" rel="stylesheet" />
+
+<!-- START BODY -->
+</head><body>
+<!-- FIELDSET FOR DEALER AREA-->
+<fieldset class="dealer-area">
+   <legend class="important-legend">Dealer's Cards</legend>
+   <!-- DIV TO PLACE CARD DIVS IN -->
+   <div class="card-set" id="dealer-cards"></div>
+   <!-- DEALER POINT TOTAL -->
+   <p id="dealer-total-value"></p>
+</fieldset>
+<!-- BETTING INFO FIELDSET-->
+<fieldset class="player-info">
+   <legend class="important-legend">Place your bets!</legend>
+   <!-- PLAYER BETS: MONEY AND AMOUNT BET -->
+      <p id="player-money"></p>
+      <p id="player-bet"></p>
+      <!-- MESSAGE OUTPUTS FOR GAME. WIN/LOSE/PLEASE BET MESSAGE/ETC -->
+      <p id="message" class="message-output"></p>
+      <p id="instructions" class="message-output">Please place your bets, then press Start game to play!</p>
+      <!-- FIELDSETS FOR THE TWO ROWS OF BETTING BUTTONS -->
+      <fieldset class="first-row">
+      <legend id="raise-text">Raise bet by:</legend>
+         <button id="raise-by-10" type="button">10</button>
+         <button id="raise-by-50" type="button">50</button>
+         <button id="raise-by-100" type="button">100</button>
+         <button id="raise-by-1000" type="button">1000</button>
+      </fieldset>
+      <fieldset class="second-row">
+      <legend id="lower-text">Lower bet by:</legend>
+         <button id="lower-by-10" type="button">10</button>
+         <button id="lower-by-50" type="button">50</button>
+         <button id="lower-by-100" type="button">100</button>
+         <button id="lower-by-1000" type="button">1000</button>
+      </fieldset>
+</fieldset>
+<!-- PLAYER'S PLAY AREA FIELDSET-->
+<fieldset class="player-area">
+   <legend class="important-legend">Player's Cards</legend>
+   <!-- DIV TO PLACE PLAYER'S CARDS IN -->
+   <div class="card-set" id="player-cards"></div>
+   <!-- PLAYER SCORE TOTAL -->
+   <p id="player-total-value"></p>
+   <!-- FIELDSET FOR GAME BUTTONS -->
+   <fieldset class="first-row">
+      <button id="start-game" type="button">Start game</button>
+      <button id="hit" type="button">Hit</button>
+      <button id="stand" type="button">Stand</button>
+      <button id="double-down" class="double" type="button">Double Down</button>
+   </fieldset>
+</fieldset>
+<!-- Import a JavaScript script for interactivity. -->
+<script src="script.js"></script>
+
+</body></html>
